@@ -4,6 +4,12 @@
   "version": "1.1",
   "description": "Removes posts containing Elon Musk related content from Reddit",
   
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "{c2d6c2a8-b610-4e61-a9aa-0f257e589d41}"
+    }
+  },
+  
   "icons": {
     "48": "src/icons/icon-48.png",
     "96": "src/icons/icon-96.png"
@@ -35,9 +41,18 @@
   "content_scripts": [
     {
       "matches": [
-        "*://*.reddit.com/*",
-        "*://reddit.com/*",
-        "*://www.reddit.com/*"
+        "*://old.reddit.com/",
+        "*://old.reddit.com/r/*",
+        "*://old.reddit.com/user/*",
+        "*://old.reddit.com/domain/*",
+        "*://www.reddit.com/",
+        "*://www.reddit.com/r/*",
+        "*://www.reddit.com/user/*",
+        "*://www.reddit.com/domain/*"
+      ],
+      "exclude_matches": [
+        "*://old.reddit.com/r/*/comments/*",
+        "*://www.reddit.com/r/*/comments/*"
       ],
       "js": ["src/content/content.js"],
       "css": ["src/styles/content.css"]
