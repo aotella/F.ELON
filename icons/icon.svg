@@ -1,0 +1,16 @@
+<svg width="128" height="128" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background Circle -->
+  <circle cx="64" cy="64" r="60" fill="#FF4500"/>
+  
+  <!-- Reddit Alien Eyes -->
+  <circle cx="45" cy="50" r="8" fill="white"/>
+  <circle cx="83" cy="50" r="8" fill="white"/>
+  
+  <!-- Antenna -->
+  <circle cx="64" cy="25" r="6" fill="white"/>
+  <path d="M64 31L64 40" stroke="white" stroke-width="4"/>
+  
+  <!-- Ban Symbol -->
+  <circle cx="64" cy="64" r="50" stroke="white" stroke-width="8" fill="none"/>
+  <line x1="32" y1="96" x2="96" y2="32" stroke="white" stroke-width="8"/>
+</svg> 
